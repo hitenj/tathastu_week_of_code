@@ -1,0 +1,9 @@
+size=int(input("Enter The size of the tuple "))
+print("Enter Values in the tuple one by one ")
+arr=[]
+for i in range(size):
+    arr.append(input())
+tup=tuple(arr)
+
+Element=input("Enter the element of which occurrences you want to know ")
+print("The number of times ",Element," occur :",tup.count(Element))
