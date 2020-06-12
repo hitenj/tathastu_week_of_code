@@ -1,0 +1,10 @@
+def greatest (lst):
+    for i in range(size-1):
+        lst[i]=max(lst[i+1: ])
+    return lst
+
+size=int(input("Enter the size of list "))
+list=[]
+for i in range(size):
+    list.append(int(input("Enter the value "+str(i+1))))
+print("The List after replacement is ",greatest(list))
