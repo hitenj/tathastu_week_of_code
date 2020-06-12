@@ -1,0 +1,13 @@
+size=int(input("Enter number of items you want to add "))
+dictin=dict()
+for i in range(size):
+    key=input("Enter key for element "+str(i+1))
+    value=(input("Enter value for element "+str(i+1)))
+    dictin[key]=value
+
+dupl=dict()    
+for K,V in dictin.items():
+    if V not in dupl.values():
+        dupl[K]=V
+
+print("Dictionary after removing duplicates :",dupl)
