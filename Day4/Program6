@@ -1,0 +1,16 @@
+size=int(input("Enter the number of words in dictionary "))
+dictin=[]
+for i in range(size):
+    dictin.append(input("Enter the word :"+str(i+1)))
+
+size=int(input("Enter the number of characters in array "))
+arr=[]
+result=[]
+print("Enter the Characters one by one ")
+for i in range(size):
+    arr.append(input())
+
+for word in dictin:
+    if set(word).issubset(set(arr)):
+        result.append(word)
+print(", ".join(result) + ".")
