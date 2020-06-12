@@ -1,0 +1,13 @@
+lstsize=int(input("Enter the number of tuples you want to enter "))
+tupsize=int(input("Enter Number of elements you want in each tuple"))
+List=[]
+for i in range(lstsize):
+    print("Enter the elements of ",i+1,"tuple")
+    arr=[]
+    for j in range(tupsize):
+        arr.append(input("Enter value one by one"))
+    List.append(tuple(arr))
+    
+N=int(input("Enter the value after which you want the list sorted "))
+List.sort(key = lambda x : x[N])
+print("The sorted list is ",List)
