@@ -1,0 +1,48 @@
+def even(n):
+  if(n%2==0):
+      return True
+  return False
+  
+def prime(n):
+  a=2
+  k=n//2
+  while(k>=a):
+      if(n%a==0):
+        return False
+      a+=1
+      k=n//a
+  return True
+  
+def palindrome(n):
+   num=str(n)
+   l=len(num)
+   for i in range(l//2):
+     if num[i]!=num[l-1-i]:
+         return False
+   return True
+
+def armstrong(n):
+   temp=n
+   sum=0
+   while(temp>=0):
+      d=temp%10
+      sum+=d**3
+      temp//=10
+   if(sum==n):
+     return True
+   return False
+   
+def check():
+    N=int(input("Enter a Number"))
+    if(even(N)):
+      print(N," is an Even Number")
+    else:
+      print(N," is an Odd Number")
+    if(prime(N)):
+      print(N," is a prime number")
+    if(palindrome(N)):
+      print(N," is a palindrome number")
+    if(armstrong(N)):
+      print(N," is an armstrong number")
+      
+check()
