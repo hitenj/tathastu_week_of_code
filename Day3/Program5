@@ -1,0 +1,16 @@
+l1=int(input("Enter The Size of the List 1 "))    
+print("Enter Values in list 1 one by one")
+list1=[]
+for i in range(l1):
+    list1.append(input())
+set1=set(list1)
+
+l2=int(input("Enter The Size of the List 2 "))
+print("Enter Values in list 2 one by one")
+list2=[]
+for i in range(l2):
+    list2.append(input())
+set2=set(list2)    
+
+intr=list(set1.intersection(set2))
+print("Intersected List is ",intr)
