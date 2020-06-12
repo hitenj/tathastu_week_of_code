@@ -1,0 +1,9 @@
+def duplicate(str):
+   duplst=""
+   for x in str:
+     if x not in duplst:
+        duplst+=x
+   return duplst
+   
+string=input("Enter A String")
+print("String after removing duplicates", duplicate(string))
