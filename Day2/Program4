@@ -1,0 +1,5 @@
+N=int(input("Enter value of N"))
+for i in range(N):
+  print("* "*(N-i)+"    "*i+" *"*(N-i))
+for i in range(2,N+1):
+  print("* "*i+"    "*(N-i)+" *"*i)
