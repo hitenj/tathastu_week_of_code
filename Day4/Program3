@@ -1,0 +1,8 @@
+size=int(input("Enter number of items you want to add "))
+dictin=dict()
+for i in range(size):
+    key=input("Enter key for element "+str(i+1))
+    value=int(input("Enter value for element "+str(i+1)))
+    dictin[key]=value
+    
+print("The second largest value in the dictionary is :",list(sorted(dictin.values()))[-2])
