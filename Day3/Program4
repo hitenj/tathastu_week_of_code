@@ -1,0 +1,13 @@
+def duplicate(lst):
+    dupl=[]
+    for x in lst:
+      if x not in dupl:
+         dupl.append(x)
+    return dupl
+
+l=int(input("Enter The Size of the List "))    
+print("Enter Values in list one by one")
+listt=[]
+for i in range(l):
+    listt.append(input())
+print("List after removing duplicates :", duplicate(listt))
