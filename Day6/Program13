@@ -1,0 +1,19 @@
+def triple(a,n): 
+   flag=0
+   for i in range(0,n-2):
+    for j in range(i+1,n-1):
+      for k in range(j+1,n):
+        sum=float(a[i])+float(a[j])+float(a[k])
+        if sum>1 and sum<2 :
+           flag=1
+           print("triplet is ",a[i],a[j],a[k])
+        else:
+           pass
+   if(flag==0):
+     print("no triplet found")       
+          
+n=int(input("enter no. of values "))
+a=[]
+for i in range(n):
+  a.append(input("enter values "))
+triple(a,n)
